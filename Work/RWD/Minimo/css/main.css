@@ -1,0 +1,311 @@
+@charset "utf-8";
+@font-face {
+	font-family: Inconsolata-Regular;
+	src: url(../fonts/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+	font-family: PlayfairDisplay-Regular;
+	src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+/* CSS Document */
+
+/*Mobile view*/
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: PlayfairDisplay-Regular;
+	font-size:16px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 2rem;
+}
+
+header {
+	background-color: #ffffff;
+	padding: 2rem;
+}
+
+.top h1 {
+	display: inline-block;
+	margin: 0 !important;
+	font-family: Inconsolata-Regular;
+	text-transform: uppercase;
+	letter-spacing: .8rem;
+}
+
+.top .btn {
+	width: 3rem;
+    height: 3rem;
+    float:right;
+    display: inline-block;
+}
+
+.btn .lines {
+    width: 80%;
+    height: 4px;
+    margin-bottom: 0.5rem;
+	background-color:#000000;
+}
+
+header nav {
+	display: none;
+}
+
+.firstPost img {
+	width: 100%;
+	
+}
+
+.firstPost h3{
+	color: #b4ad9e;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+.firstPost h1{
+	color: #626262;
+	font-size:1.5rem;
+	text-align: center;
+	
+}
+
+.firstPost p {
+	color: #626262;
+	font-size: 1rem;
+	text-align:justify;
+	padding: 1rem;
+	line-height: 1.5;
+}
+
+.Photodiary ul,
+.homepage ul{
+	  list-style-type: none;
+}
+
+.Photodiary ul li figure {
+     margin-bottom: 1.5rem;
+}
+
+.Photodiary ul li figure>img {
+     width: 100%;
+}
+
+.Photodiary ul li figure figcaption>h3{
+     color: #b4ad9e;
+     padding: .5rem;
+     font-size: 0.8rem;
+	 text-align: center;
+}
+
+.Photodiary ul li figure figcaption>h2{
+	 color: #626262;
+     padding: .5rem;
+     font-size: 1.5rem;
+	 text-align: center;
+}
+
+.Photodiary ul li figure figcaption>p{
+	 padding: 1rem;
+     color: #626262;
+     width: 80%;
+	 line-height: 1.5;
+}
+
+.newsletter{
+	background-color: #f0f0f0;
+}
+
+.newsletter h2{
+	 color: #333333;
+     padding: .5rem;
+     font-size: 1.5rem;
+	 text-align: center;
+}
+
+.newsletter form {
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+input  {
+    border: none;
+    color: #757575;
+    padding: 0.03rem;
+    display: block;
+    margin-bottom: .5rem;
+	background-color: transparent;
+	border-bottom: 1px solid black;
+    background: url(../assets/icon.png) no-repeat;
+    background-position: center right;
+	width: 65%;
+}
+
+.homepage {
+	margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.homepage ul li figure {
+	margin-bottom: 1.5rem;
+}
+
+.homepage ul li figure>img {
+     width: 100%;
+}
+
+.homepage ul li figure figcaption>h3{
+     color: #b4ad9e;
+     padding: .5rem;
+     font-size: 0.8rem;
+	text-align: center;
+}
+
+.homepage ul li figure figcaption>h2{
+	 color: #626262;
+     padding: .5rem;
+     font-size: 1.5rem;
+	 text-align: center;
+}
+
+.homepage ul li figure figcaption>p{
+	 padding: 1rem;
+     color: #626262;
+     width: 80%;
+	 line-height: 1.5;
+}
+
+.homepage a {
+	color: #ababab;
+	font-size: 1rem;
+	text-decoration:none;
+	padding: 1rem 1.5rem;
+    border: 1px solid gray;
+}
+
+footer {
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+footer .last>p {
+	display: inline-block;
+    color: #000000;
+	padding: 1.5rem;
+}
+
+.Socicons ol {
+	list-style: none;
+}
+
+.Socicons>ol>li {
+	display: inline-block;
+	padding:0.5rem 1rem;
+}
+
+.Socicons ol li a{
+	text-decoration:none;
+	color:#626262;
+}
+
+/* Tablet View */
+
+@media (min-width:481px){	
+.newsletter {
+    padding: 2rem 4rem;
+}
+	
+.newsletter h2 {
+   padding: 1.5rem;
+}
+}
+
+/*Desktop view*/
+
+@media(min-width:769px){
+.btn{
+	display: none !important;
+}
+
+	nav {
+		display: inline-block !important;
+		float: right;
+		margin-right: 10%;
+	}
+	
+	nav ul li {
+		display: inline-block;
+		padding:1rem 2.5rem;
+	}
+	
+	nav ul li a {
+		text-decoration: none;
+		color: #969696;
+		text-transform: uppercase;
+	}
+	
+	.Photodiary ul{
+		text-align: center;
+	}
+	
+	.Photodiary ul li{
+		display: inline-block;
+		width: 40%;
+	}
+	
+	.Photodiary ul li figure > img {
+		width: 80%;
+		height: 40%;
+	}
+	
+	.homepage ul{
+		text-align: center;
+		padding-bottom: 4rem;
+	}
+	
+	.homepage ul li {
+		display: inline-block;
+		width: 40%;
+		margin-right: 1.5rem;
+	}
+	
+	.homepage ul li >img {
+		width: 80%;
+		height: 40%;
+	}
+	
+	.last p{
+		display: inline-block;
+	}
+	
+	.Socicons {
+		display: inline-block;
+		float: right;
+		margin-right: 10%;
+		margin-top: 1%;
+	}
+	
+	.Socicons p,
+	.Socicons ol{
+		display: inline-block;
+	}
+	
+}

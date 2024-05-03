@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website</title>
+
+  <!--external css-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="mainWrapper">
+    <header>
+      <section class="top"><!-- Top starts here -->
+        <h1>Music</h1>
+        <div class="btn">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div> <!-- Mobile button ends here -->
+
+        <nav><!-- navigation starts here -->
+          <ul>
+            <li>
+              <a href="#" target="_self" title="home">HOME</a>
+            </li>
+            <li>
+              <a href="#" target="_self" title="Feature">FEATURE</a>
+            </li>
+            <li>
+              <a href="#" target="_self" title="about us">ABOUT</a>
+            </li>
+            <li>
+              <a href="#" target="_self" title="contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav> <!-- navigation ends here -->
+      </section> <!-- top ends here -->
+
+      <section class="callToAction">
+        <h2>MUSIC IS LIFE</h2>
+        <h3>UNIVERSAL TRUTH</h3>
+      </section> <!-- callToAction ends here -->
+    </header> <!-- header ends here -->
+
+    <main><!-- main starts here -->
+      <section class="quote"><!-- quote starts here -->
+        <p class="first"><strong>Music</strong> gives soul to the universe. Wings to the <strong>Mind</strong>. Flight to the <strong>Imaginations.</strong></p>
+        <p class="second">In publishing and graphic design,lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content (also called greeking). In publishing and graphic design,lorem ipsum is a placeholder text commonly.</p>
+      </section> <!-- quote ends here -->
+      <section class="firstRow"><!-- firstRow starts here -->
+        <ul>
+          <li>
+            <figure>
+              <img src="assets/f1.jpg" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/f2.jpg" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/f3.jpg" alt="">
+            </figure>
+          </li>
+        </ul>
+      </section> <!-- firstRow ends here -->
+      <section class="secondRow"><!-- secondRow stars here -->
+        <ul>
+          <li>
+            <figure>
+              <img src="assets/f4.jpg" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="assets/f5.jpg" alt="">
+            </figure>
+          </li>
+        </ul>
+      </section> <!-- secondRow ends here -->
+
+      <section class="icons"><!-- icons starts here -->
+        <div class="djParty">
+          <h3>DJ PARTY ON THE HOUSE</h3>
+          <p>Music is also a form of entertainment that puts sounds together in a way that people like, find interesting or dance to.</p>
+        </div> <!-- djParty ends here -->
+        <div class="concert">
+          <h3>CONCERT AT ITS BEST</h3>
+          <p>Music is also a form of entertainment that puts sounds together in a way that people like, find interesting or dance to.</p>
+        </div> <!-- concert ends here -->
+        <div class="playingMusic">
+          <h3>PLAYING MUSIC VIDEOS</h3>
+          <p>Music is also a form of entertainment that puts sounds together in a way that people like, find interesting or dance to.</p>
+        </div> <!-- playingMusic ends here -->
+      </section> <!-- icons ends here -->
+
+      <section class="bio"><!-- bio starts here -->
+        <div class="imgslider">
+          <img src="assets/member-bg.jpg" class="im"  alt=""/>
+          <img src="assets/service-bg.jpg" class="im"  alt=""/>
+          <img src="assets/image111.jpg" class="im" alt="">
+          <div class="top-left">
+            <h4>MUSIC</h4>
+            <p>Music is also a form of entertainment that puts sounds together in a way that people like, find interesting or dance to.Music is also a form of entertainment that puts sounds together in a way that people like, find interesting or dance to.</p>
+          </div> <!-- top-left ends here -->
+        </div> <!-- imgslider ends here -->
+      </section> <!-- bio ends here -->
+
+      <section class="girlWithInfo"><!-- girlWithInfo starts here -->
+        <figure>
+          <img src="assets/about-img.png" alt="">
+          <figcaption>
+            <p><strong>Music</strong> gives soul to the universe. Wings to the <strong>Mind.</strong>flight to the <strong>Imaginations.</strong></p>
+            <p>In publishing and graphic design,lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document without relying on meaningful content (also called greeking). In publishing and graphic design,lorem <br>ipsum is a placeholder text commonly.</p>
+          </figcaption>
+        </figure>
+      </section> <!-- girlWithInfo ends here -->
+
+      <div style="clear: both;"></div>  
+
+      <section class="connect"><!-- connect starts here -->
+         <div class="info">
+          <h2>SEND US Message.</h2>
+            <p>We dont send any kind of spam</p>
+          </div> <!-- info ends here -->
+          <div class="contact">
+            <form action="" method="post">
+              <div class="left">
+                <input type="text" name="name" placeholder="Enter Your Name">
+                <input type="text" name="mail" placeholder="Enter Your Email">
+                <input type="text" name="phoneNo" placeholder="Enter Your mobile number">
+              </div> <!-- left ends here -->
+              <div class="right">
+                <textarea rows="11" cols="35" placeholder="Your Message"></textarea>
+                <input type="submit" id="click" value="SEND MESSAGE">
+              </div> <!-- right ends here -->
+            </form> <!-- form ends here -->
+          </div> <!-- contact ends here -->
+      </section> <!-- connect ends here -->
+    </main> <!-- main ends here -->
+
+    <footer><!-- footer starts here -->
+      <p>copyright &copy; 2018 all right reserved | this templete is made by cololib</p>
+    </footer> <!-- footer ends here -->
+  </div> <!-- mainWrapper ends here -->
+  
+  <!-- JavaScript start Here -->
+  <script>
+    var slideindex = 0;
+    autoslide();
+    
+    function autoslide() {
+      var i;
+      var x = document.getElementsByClassName("im");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideindex++;
+      if (slideindex > x.length)
+      {
+        slideindex = 1;
+      }
+      x[slideindex - 1].style.display = "block";
+      setTimeout(autoslide, 2000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <div class="location-info">
+          <img src="assets/hamburger.svg" id="ham">
+          <img src="assets/div.header_logo__d4jIK.svg" alt="Logo" class="logo" />
+          
+        </div>
+        <div class="location-details">
+          <div class="pincode-info">
+            <div class="pincode-wrapper">
+              <div class="pincode-container">
+                <img src="assets/location.svg" alt="Location icon" class="location-icon" />
+                <div class="pincode">400053</div>
+                <img src="assets/edit.svg" alt="Edit icon" class="edit-icon" />
+              </div>
+              <div class="city">Mumbai</div>
+            </div>
+          </div>
+          <div class="delivery-info">
+            <div class="delivery-text">
+              <span>Earliest Home Delivery available</span>
+            </div>
+            <div class="delivery-details">
+              <img src="assets/delivery icon.svg" alt="Delivery icon" class="delivery-icon" />
+              <div class="delivery-time">Tomorrow 07:00 AM - 10:00 AM</div>
+            </div>
+          </div>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Search for" class="search-input" id="searchInput"/>
+          <div id="animatedPlaceholder" class="placeholder-animation">Rice</div>
+
+          <button class="search-button">SEARCH</button>
+        </div>
+        <div class="user-actions">
+          <div class="user-info">
+            <img src="assets/user icon.svg" alt="User icon" class="user-icon" />
+            <div class="user-text hover2">Sign In / Register</div>
+            <div class="cart-icon" onclick="toggleCart()">
+              <img src="assets/cart logo.svg" alt="Cart icon" />
+      
+        <span id="cartCount">0</span>
+      </div>
+          </div>
+          
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="categories-container">
+          <div class="categories">
+            <img src="assets/hambg.svg" alt="Categories icon" class="categories-icon" />
+            <div class="categories-text ">All Categories</div>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu-item-1 hover">Value Packs</div>
+          <div class="menu-item-2 hover">Ready To Cook</div>
+          <div class="menu-item-3 hover">Home Appliances</div>
+          <div class="menu-item-4 hover">Cookware</div>
+          <div class="menu-item-5 hover">Serveware</div>
+          <div class="menu-item-6 hover">Cleaners</div>
+          <div class="menu-item-7 hover">Detergent & Fabric Care</div>
+        </div>
+      </nav>
+    </header>
+    <figure class="image-container">
+      <img src="assets/Daily Savings.jpg" alt="Descriptive alt text goes here" class="responsive-image" loading="lazy" id="main-image"/>
+    </figure>
+    <section class="popular-categories maincontainer">
+      <h2 class="section-title">Popular Categories</h2>
+      <div class="category-grid maincontainer">
+        <div class="category-row swiper-container" id="swiper-container">
+          <div class="category-item swiper-slide">
+            <img src="assets/Tea.png" alt="Tea" class="category-image" />
+            <p class="category-name">Tea</p>
+          </div>
+          <div class="category-item swiper-slide">
+            <img src="assets/Coffee.png" alt="Coffee" class="category-image" />
+            <p class="category-name">Coffee</p>
+          </div>
+          <div class="health-drinks-item swiper-slide">
+            <img src="assets/Health Drinks.png" alt="Health Drinks" class="health-drinks-image" />
+            <p class="category-name">Health Drinks</p>
+          </div>
+          <div class="category-item swiper-slide">
+            <img src="assets/Dairy.png" alt="Dairy" class="category-image" />
+            <p class="category-name swiper-slide">Dairy</p>
+          </div>
+          <div class="bath-soaps-item swiper-slide">
+            <img src="assets/Bath Soaps.png" alt="Bath Soaps" class="bath-soaps-image" />
+            <p class="category-name">Bath Soaps</p>
+          </div>
+          <div class="pooja-needs-item swiper-slide">
+            <img src="assets/Pooja Needs.png" alt="Pooja Needs" class="pooja-needs-image" />
+            <p class="category-name">Pooja Needs</p>
+          </div>
+          <div class="toothpastes-item swiper-slide">
+            <img src="assets/Toothpastes.png" alt="Toothpastes" class="toothpastes-image" />
+            <p class="category-name">Toothpastes</p>
+          </div>
+          <div class="hair-shampoos-item swiper-slide">
+            <img src="assets/Hair Shampoos.png" alt="Hair Shampoos" class="hair-shampoos-image" />
+            <p class="category-name">
+              Hair <br />
+              Shampoos
+            </p>
+          </div>
+          <div class="soft-drinks-item swiper-slide">
+            <img src="assets/Soft Drinks.png" alt="Soft Drinks" class="soft-drinks-image" />
+            <p class="category-name">Soft Drinks</p>
+          </div>
+          <div class="cleaning-tools-item swiper-slide">
+            <img src="assets/Cleaning Tools.png" alt="Cleaning Tools" class="cleaning-tools-image" />
+            <p class="cleaning-tools-name">Cleaning Tools</p>
+          </div>
+          <div class="category-item swiper-slide">
+            <img src="assets/Coffee.png" alt="Coffee" class="category-image" />
+            <p class="category-name">Coffee</p>
+          </div>
+          <div class="category-item swiper-slide">
+            <img src="assets/Coffee.png" alt="Coffee" class="category-image" />
+            <p class="category-name">Coffee</p>
+          </div>
+        </div>
+        <button id="scroll-left" class="scroll-button left">
+          <svg width="16" height="16" viewBox="0 0 16 16">
+              <path d="M12 2l-6 6 6 6" fill="none" stroke="#25a541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </button>
+      <!-- Right Scroll Button -->
+      <button id="scroll-right" class="scroll-button right">
+          <svg width="16" height="16" viewBox="0 0 16 16">
+              <path d="M4 2l6 6-6 6" fill="none" stroke="#25a541" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </button>
+      </div>
+    </section>
+
+    <div class="product-details">
+      <img src="assets/20mar24-curated-gudipadwa-mu1.jpg" alt="Product Image 1" class="product-image" />
+      <img src="assets/20mar24-curated-gudipadwa-mum2.jpg" alt="Product Image 2" class="product-image-secondary" />
+    </div>
+
+    <!-- cart start here -->
+    <div class="maincart">
+      <div class="cart">
+        <h1 class="h1">Stylish Handbags & Wallets</h1>
+        <div class="view-all">View All</div>
+      </div>
+      
+      <div class="carousel" id="productCarousel">
+      </div>
+      
+      <button class="scroll-button2 scroll-left2" onclick="scrollProductCarousel('left')">&#9664;</button>
+      <button class="scroll-button2 scroll-right2" onclick="scrollProductCarousel('right')">&#9654;</button>
+      
+          
+      <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-modal" onclick="event.stopPropagation();">
+          <span class="close-button" onclick="toggleCart()">&times;</span>
+          <h2>Your Cart</h2>
+          <div id="cartItems"></div>
+          <div class="cart-total" id="cartTotal">Total: $0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer-container">
+      <div class="footer-top">
+          <div class="footer-download">
+              <p class="download-text">Download DMart Ready Mobile App Now!</p>
+              <div class="app-stores">
+                  <a href="#" class="app-link"><img src="assets/Android.svg" alt="Google Play" class="app-icon" /></a>
+                  <a href="#" class="app-link"><img src="assets/group-2.svg" alt="App Store" class="app-icon" /></a>
+              </div>
+              <div class="payment-methods">
+                  <img src="assets/group-3.svg" alt="Visa" class="payment-icon" />
+                  <img src="assets/group-4.svg" alt="Mastercard" class="payment-icon" />
+                  <img src="assets/group-5.svg" alt="American Express" class="payment-icon" />
+                  <img src="assets/group-6.svg" alt="RuPay" class="payment-icon" />
+                  <img src="assets/group-7.svg" alt="Cash" class="payment-icon" />
+              </div>
+          </div>
+          <div class="footer-links">
+              <div class="link-column">
+                  <a href="#" class="footer-link">FAQs</a>
+                  <a href="#" class="footer-link">Privacy Policy</a>
+                  <a href="#" class="footer-link">Pricing, Delivery, Return and Refund Policy</a>
+                  <a href="#" class="footer-link">Terms and Conditions</a>
+              </div>
+              <div class="link-column">
+                  <a href="#" class="footer-link">Contact Us</a>
+                  <a href="#" class="footer-link">About Us</a>
+                  <a href="#" class="footer-link">Pickup Points</a>
+                  <a href="#" class="footer-link">Disclaimer</a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p class="copyright-text">
+              Copyright © 2024 Avenue E-Commerce Limited (AEL). All Rights Reserved.
+          </p>
+      </div>
+  </div>
+
+    
+  </div>
+
+  <script src="js/d-mart.js"></script>
+</body>
+</html>

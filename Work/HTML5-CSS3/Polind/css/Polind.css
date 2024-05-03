@@ -1,0 +1,1009 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "FontAwesome";
+	src: url(../fonts/fontawesome-webfont.ttf);
+}
+
+/*Mobile view*/
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	font-family: Myriad Pro;
+	font-size: 16px;
+}
+
+header {
+	background: url(../assets/main.png) no-repeat top center;
+	width: 100%;
+	height: 55vh;
+	background-size: contain;
+	text-align: center;
+}
+
+header .Top {
+	width: 100%;
+	padding-top: 0.5rem;
+}
+
+.btn {
+	width: 50px;
+	height: 38px;
+	background-color: #262626;
+	border-radius: 7px;
+	margin-right: 1.5rem;
+	padding-top: .6rem;
+	display: inline-block;
+	float: right;
+}
+
+.btn .lines {
+	width: 80%;
+	height: 3px;
+	margin-bottom: .5rem;
+	background-color: #ffffff;
+}
+
+.Top nav {
+	display: none;
+}
+
+.Top h1 {
+	background: url(../assets/logo.png) no-repeat top left;
+	height: 61px;
+	width: 51px;
+	margin: 10px;
+	color: #ffffff;
+	font-size: 0.75rem;
+	background-size: 22% 30%;
+	padding-left: 1.2rem;
+	padding-top: .2rem;
+}
+
+header h2 {
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+header h3 {
+	color: #ed6950;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+header p {
+	color: #e1e1e1;
+	font-size: 0.5rem;
+	text-align: center;
+	padding: 0.5rem;
+	padding-bottom: 1.5rem;
+}
+
+header a {
+	color: #b98000;
+	font-size: 0.7rem;
+	text-decoration: none;
+	background-color: #ffc74a;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}
+
+.popular {
+	margin-top: -2rem;
+	width: 100%;
+	text-align: center;
+}
+
+.popular .bttm {
+	color: #bebebe;
+	font-size: 1rem;
+	padding-bottom: .5rem;
+}
+
+.photoLeft {
+	background: url(../assets/first.png) no-repeat top center;
+	width: 90%;
+	height: 80vh;
+}
+
+.Zakopane {
+	background: url(../assets/sec.png) no-repeat top center;
+	width: 90%;
+	height: 80vh;
+}
+
+.Zakopane h3 {
+	color: #ffffff;
+	font-size: 1.5rem;
+	padding-top: 22rem;
+}
+
+.Zakopane p {
+	color: #695622;
+	font-size: .6rem;
+}
+
+.Sandomierz {
+	background: url(../assets/thir.png) no-repeat top center;
+	width: 90%;
+	height: 80vh;
+}
+
+.Sandomierz a {
+	color: #b98000;
+	font-size: 0.7rem;
+	text-decoration: none;
+	background-color: #ffc74a;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}
+
+.Sandomierz h2 {
+	color: #f1f0ef;
+	font-size: 2rem;
+	padding-top: 10rem;
+}
+
+.Sandomierz p {
+	color: #d4cdc1;
+	font-size: 0.5rem;
+	padding-bottom: 5rem;
+}
+
+.Sopot {
+	background: url(../assets/fort.png) no-repeat top center;
+	width: 90%;
+	height: 80vh;
+}
+
+.Sopot h3 {
+	color: #eaedf0;
+	font-size: 1rem;
+	padding-top: 22rem;
+}
+
+.Sopot p {
+	color: #c7a960;
+	font-size: 0.5rem;
+}
+
+.photoright {
+	background: url(../assets/fift.png) no-repeat top center;
+	width: 90%;
+	height: 80vh;
+}
+
+.search {
+	color: #606f81;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.Searchplace {
+	display: block;
+	width: 80%;
+	height: 2rem;
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	background: url(../assets/search.png) no-repeat 95% center;
+}
+
+::placeholder {
+	padding-left: 1rem;
+	font-size: 1rem;
+	color: #606f81;
+}
+
+.left {
+	display: inline-block;
+	margin-left: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.right {
+	display: inline-block;
+	margin-left: 5rem;
+}
+
+.left a {
+	color: #b98000;
+	font-size: 0.7rem;
+	text-decoration: none;
+	background-color: #ffc74a;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}
+
+.right a {
+	color: #b98000;
+	font-size: 0.7rem;
+	text-decoration: none;
+	background-color: #ffc74a;
+	border-radius: 1rem;
+	padding: 0.5rem;
+}
+
+.Poznan {
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.Poznan h2 {
+	color: #606f81;
+	font-size: 1.5rem;
+}
+
+.Poznan p {
+	color: #606f81;
+	font-size: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.Poznan a {
+	color: #bdc8d9;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Warsaw {
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.Warsaw h2 {
+	color: #606f81;
+	font-size: 1.5rem;
+}
+
+.Warsaw p {
+	color: #606f81;
+	font-size: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.Warsaw a {
+	color: #b98000;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffc74a;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Wroclaw {
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.Wroclaw h2 {
+	color: #606f81;
+	font-size: 1.5rem;
+}
+
+.Wroclaw p {
+	color: #606f81;
+	font-size: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.Wroclaw a {
+	color: #bdc8d9;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Karpacz {
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.Karpacz h2 {
+	color: #606f81;
+	font-size: 1.5rem;
+}
+
+.Karpacz p {
+	color: #606f81;
+	font-size: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.Karpacz a {
+	color: #bdc8d9;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Dolina {
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.Dolina h2 {
+	color: #606f81;
+	font-size: 1.5rem;
+}
+
+.Dolina p {
+	color: #606f81;
+	font-size: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.Dolina a {
+	color: #bdc8d9;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Kozy {
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.Kozy h2 {
+	color: #606f81;
+	font-size: 1.5rem;
+}
+
+.Kozy p {
+	color: #606f81;
+	font-size: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.Kozy a {
+	color: #bdc8d9;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.city {
+	background-color: #f8f9fb;
+	background: url(../assets/IERZ.png) no-repeat top center;
+	background-size: 100% 100%;
+	padding-top: 1.5rem;
+	height: 125vh;
+}
+
+.city h1 {
+	color: #606f81;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.city h2 {
+	color: #f8c759;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.city p {
+	color: #606f81;
+	font-size: 0.5rem;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.city a {
+	color: #b98000;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffc74a;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter h2 {
+	text-align: center;
+	color: #ffffff;
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+
+.SIGNUP {
+	color: #b98000;
+	font-size: 0.6rem;
+	text-decoration: none;
+	background-color: #ffc74a;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter {
+	width: 100%;
+	height: 25vh;
+	background: url(../assets/thirt.png) no-repeat 100% center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 1rem;
+}
+
+.newsletter p {
+	text-align: center;
+	font-size: 0.7rem;
+	color: #ffffff;
+	padding-top: 1.5rem;
+}
+
+.newsletter p a {
+	color: #b98000;
+	font-size: 0.7rem;
+}
+
+.Copyright {
+	width: 100%;
+	height: 25vh;
+	background: url(../assets/footer.png) no-repeat top center;
+	background-size: cover;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.Copyright h1 {
+	background: url(../assets/logo.png) no-repeat top center;
+	height: 61px;
+	text-indent: -9999px;
+	padding-bottom: 1rem;
+}
+
+.Copyright p {
+	color: #606f81;
+	font-size: 0.6rem;
+}
+
+.city .imgOffer div {
+		width: 70%;
+		height: 78vh;
+		border: 4px solid orange;
+		position: relative;
+		top: -459px;
+		left: 23px;
+	}
+
+/*Tablet View*/
+
+@media (min-width:769px) {
+
+	header {
+		background-size: cover;
+		height: 65vh;
+	}
+
+	.search {
+		font-size: 2rem;
+	}
+
+	.popular {
+		margin-top: -3rem;
+	}
+
+	.photoLeft,
+	.Zakopane,
+	.Sandomierz,
+	.Sopot,
+	.photoright {
+		background-size: cover;
+		margin-bottom: 3rem;
+	}
+
+	.Zakopane h3 {
+		font-size: 3.5rem;
+	}
+
+	.Zakopane p {
+		font-size: 1.6rem;
+	}
+
+	.Sandomierz h2 {
+		font-size: 4rem;
+	}
+
+	.Sandomierz p {
+		font-size: 1.5rem;
+	}
+
+	.Sandomierz a {
+		font-size: -2.3rem;
+	}
+
+	.Sopot h3 {
+		font-size: 4rem;
+	}
+
+	.Sopot p {
+		font-size: 1.5rem;
+	}
+
+	.right {
+		float: right;
+		margin-right: 8rem;
+		margin-top: 1rem;
+	}
+
+	.left {
+		display: inline-block;
+		float: left;
+		margin-left: 8rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.Poznan figure {
+		margin-bottom: 1rem;
+	}
+
+	.Poznan figure img {
+		width: 80%;
+	}
+
+	.Poznan figure figcaption h2 {
+		font-size: 3rem;
+	}
+
+	.Poznan figure figcaption p {
+		font-size: 1.5rem;
+	}
+
+	.Poznan figure figcaption a {
+		font-size: 1.25rem;
+	}
+
+	.Warsaw figure {
+		margin-bottom: 1rem;
+	}
+
+	.Warsaw figure img {
+		width: 80%;
+	}
+
+	.Warsaw figure figcaption h2 {
+		font-size: 3rem;
+	}
+
+	.Warsaw figure figcaption p {
+		font-size: 1.5rem;
+	}
+
+	.Warsaw figure figcaption a {
+		font-size: 1.25rem;
+	}
+
+	.Wroclaw figure {
+		margin-bottom: 1rem;
+	}
+
+	.Wroclaw figure img {
+		width: 80%;
+	}
+
+	.Wroclaw figure figcaption h2 {
+		font-size: 3rem;
+	}
+
+	.Wroclaw figure figcaption p {
+		font-size: 1.5rem;
+	}
+
+	.Wroclaw figure figcaption a {
+		font-size: 1.25rem;
+	}
+
+	.Karpacz figure {
+		margin-bottom: 1rem;
+	}
+
+	.Karpacz figure img {
+		width: 80%;
+	}
+
+	.Karpacz figure figcaption h2 {
+		font-size: 3rem;
+	}
+
+	.Karpacz figure figcaption p {
+		font-size: 1.5rem;
+	}
+
+	.Karpacz figure figcaption a {
+		font-size: 1.25rem;
+	}
+
+	.Dolina figure {
+		margin-bottom: 1rem;
+	}
+
+	.Dolina figure img {
+		width: 80%;
+	}
+
+	.Dolina figure figcaption h2 {
+		font-size: 3rem;
+	}
+
+	.Dolina figure figcaption p {
+		font-size: 1.5rem;
+	}
+
+	.Dolina figure figcaption a {
+		font-size: 1.25rem;
+	}
+
+	.Kozy figure {
+		margin-bottom: 1rem;
+	}
+
+	.Kozy figure img {
+		width: 80%;
+	}
+
+	.Kozy figure figcaption h2 {
+		font-size: 3rem;
+	}
+
+	.Kozy figure figcaption p {
+		font-size: 1.5rem;
+	}
+
+	.Kozy figure figcaption a {
+		font-size: 1.25rem;
+	}
+
+	main {
+		margin-bottom: 12rem;
+	}
+
+	.city h1 {
+		font-size: 2rem;
+	}
+
+	.city p {
+		font-size: 1rem;
+	}
+
+	.city a {
+		font-size: 1rem
+	}
+
+	.newsletter {
+		height: 38vh;
+		padding-top: 8rem;
+	}
+}
+
+/*Desktop View*/
+
+@media (min-width:1200px) {
+	.Top .btn {
+		display: none !important;
+	}
+
+	.Top nav {
+		display: inline-block;
+		float: right;
+		margin-top: 3rem;
+		margin-right: 2rem;
+	}
+
+	header .Top nav ul li {
+		display: inline-block;
+	}
+
+	header .Top nav ul li a {
+		background-color: transparent !important;
+		color: #ffffff;
+		font-size: 1.5rem;
+	}
+
+	header .Top nav ul li a:hover {
+		color: #ffc74a;
+	}
+
+	.clearfix {
+		clear: both;
+	}
+
+	.Top h1 {
+		font-size: 3rem;
+		background-size: 55%;
+		padding-left: 5rem;
+		padding-top: 1.5rem;
+		display: inline-block;
+		float: left;
+		margin-left: 2rem;
+	}
+
+	header {
+		height: 90vh;
+	}
+
+	header h2 {
+		color: #ffffff;
+		font-size: 4rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	header h3 {
+		color: #ed6950;
+		font-size: 4rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	header p {
+		color: #e1e1e1;
+		font-size: 1rem;
+		text-align: center;
+		padding: 0.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	header a {
+		color: #b98000;
+		font-size: 1rem;
+		text-decoration: none;
+		background-color: #ffc74a;
+		border-radius: 1rem;
+		padding: 0.5rem;
+	}
+
+	.photoLeft,
+	.Zakopane,
+	.Sandomierz,
+	.Sopot,
+	.photoright {
+		display: inline-block;
+		float: left;
+		width: 18%;
+		margin-right: 2.5%;
+		height: 40vh;
+		background-size: 100% 100%;
+	}
+
+	.photoright {
+		margin-right: 0;
+		float: right;
+	}
+
+	.Zakopane h3 {
+		font-size: 2rem;
+		padding-top: 5rem;
+		color: #ffffff;
+		text-shadow: 0 0 5px #000;
+	}
+
+	.Sandomierz h2 {
+		font-size: 2rem;
+		padding-top: 2rem;
+		color: #ffffff;
+		text-shadow: 0 0 5px #000;
+	}
+
+	.Sandomierz p {
+		padding-bottom: 1rem;
+	}
+
+	.Sopot h3 {
+		font-size: 2rem;
+		padding-top: 5rem;
+		color: #ffffff;
+		text-shadow: 0 0 5px #000;
+	}
+
+	.Searchplace {
+		display: block;
+		width: 80%;
+		height: 3rem;
+		border-radius: 15px;
+		padding-left: 1.5rem;
+	}
+
+	.search {
+		clear: both;
+	}
+
+	.Poznan,
+	.Warsaw,
+	.Wroclaw,
+	.Karpacz,
+	.Dolina,
+	.Kozy {
+		display: inline-block;
+		width: 25%;
+		height: 50vh;
+		background-size: 100% 100%;
+	}
+
+	.Poznan figure {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	.Poznan figure img,
+	.Warsaw figure img,
+	.Wroclaw figure img,
+	.Karpacz figure img,
+	.Dolina figure img,
+	.Kozy figure img {
+		width: 80%;
+	}
+
+	.Poznan figure figcaption h2 {
+		font-size: 2rem;
+	}
+
+	.Poznan figure figcaption p {
+		font-size: 1rem;
+	}
+
+	.Poznan figure figcaption a {
+		font-size: 1rem;
+	}
+
+	.Warsaw figure {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	.Warsaw figure img {
+		width: 80%;
+	}
+
+	.Warsaw figure figcaption h2 {
+		font-size: 2rem;
+	}
+
+	.Warsaw figure figcaption p {
+		font-size: 1rem;
+	}
+
+	.Warsaw figure figcaption a {
+		font-size: 1rem;
+	}
+
+	.Wroclaw figure {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	.Wroclaw figure figcaption h2 {
+		font-size: 2rem;
+	}
+
+	.Wroclaw figure figcaption p {
+		font-size: 1rem;
+	}
+
+	.Wroclaw figure figcaption a {
+		font-size: 1rem;
+	}
+
+	.Karpacz figure {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	.Karpacz figure figcaption h2 {
+		font-size: 2rem;
+	}
+
+	.Karpacz figure figcaption p {
+		font-size: 1rem;
+	}
+
+	.Karpacz figure figcaption a {
+		font-size: 1rem;
+	}
+
+	.Dolina figure {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	.Dolina figure img {
+		width: 80%;
+	}
+
+	.Dolina figure figcaption h2 {
+		font-size: 2rem;
+	}
+
+	.Dolina figure figcaption p {
+		font-size: 1rem;
+	}
+
+	.Dolina figure figcaption a {
+		font-size: 1rem;
+	}
+
+	.Kozy figure {
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	.Kozy figure img {
+		width: 80%;
+	}
+
+	.Kozy figure figcaption h2 {
+		font-size: 2rem;
+	}
+
+	.Kozy figure figcaption p {
+		font-size: 1rem;
+	}
+
+	.Kozy figure figcaption a {
+		font-size: 1rem;
+	}
+
+	.city {
+		text-align: center;
+		clear: both;
+		margin-top: 69px;
+		position: relative;
+		display: inline-block;
+	}
+
+	.city div {
+		display: inline-block;
+		float: left;
+		margin-left: 245px;
+		width: 30%;
+	}
+
+	.city div p {
+		line-height: 1.5;
+		text-align: left;
+	}
+
+	.city .imgOffer {
+		margin-left: 0 !important;
+		margin-top: 72px;
+	}
+
+	.city .imgOffer div {
+		height: 45vh;
+		top: -245px;
+		left: -155px;
+	}
+
+	.city h2 {
+		padding-top: 3rem;
+	}
+
+	main {
+		margin-bottom: 0rem;
+	}
+}
