@@ -441,7 +441,7 @@ sub {
 
 .five-flex button {
   padding: 7px;
-  width: 7rem;
+  width: 100%;
   color: white;
   border: none;
   background-color: var(--orange);
@@ -1339,6 +1339,10 @@ padding-top: 20px;
   width: 100%;
   height: 290px;
 }
+
+.sec6-div1 p{
+  margin-bottom: 0;
+}
   .msec4-div1{
     width: 50%;
     padding: 10px 10px 10px 20px;
@@ -1447,7 +1451,10 @@ sub {
 }
 .five-flex p,
 ul {
-  margin: 8px;
+  margin: 0px;
+}
+.sec6-div1 button{
+  width: 100px;
 }
 .five-flex li {
   margin: 8px;
@@ -1462,33 +1469,40 @@ ul {
 .six {
   font-size: 0.6rem;
 }
+.six-flex {
+  justify-content: space-between;
+}
 .photo1 {
   background: url(img/team-1.jpg);
   background-size: cover;
   height: 200px;
-  width: 150px;
+  width: 100%;
   background-position: center;
 }
 .photo2 {
   background: url(img/team-2.jpg);
   background-size: cover;
   height: 200px;
-  width: 150px;
+  width: 100%;
   background-position: center;
 }
 .photo3 {
   background: url(img/team-3.jpg);
   background-size: cover;
   height: 200px;
-  width: 150px;
+  width: 100%px;
   background-position: center;
 }
 .photo4 {
   background: url(img/team-4.jpg);
   background-size: cover;
   height: 200px;
-  width: 150px;
+  width: 100%px;
   background-position: center;
+}
+
+.five-flex ul {
+  margin: 0;
 }
 /* seven start here */
 .seven-flex{
@@ -1512,17 +1526,26 @@ ul {
   background: url(img/blog-1.jpg);
   background-position: center;
   background-size: cover;
-  width: 190px;
+  width: 100%;
   height: 250px;
 }
 .img2 {
   background: url(img/blog-2.jpg);
   background-position: center;
   background-size: cover;
-  width: 190px;
+  width: 100%;
   height: 250px;
 }
-
+.icon1, .icon2, .icon3 {
+  margin-left: -20px;
+}
+.photo img{
+  width: 30px;
+  height: 30px;
+}
+.nav-ul1 li a{
+  font-size: 8px;
+}
 .img-left img {
   margin-left: 3px;
   height: 30px;
